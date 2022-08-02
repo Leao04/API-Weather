@@ -200,16 +200,16 @@
 
     .desc {
         padding-left: 110px;
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .temp {
         padding-left: 110px;
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .h2 {
-        padding-left: 30px;
+        padding-left: 50px;
         color: red;
     }
 
