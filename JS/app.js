@@ -113,7 +113,7 @@ function getWeather() {
             desc.innerHTML = descValue;
         })
 
-        .catch(err => alert("You need to inform a city!"))
+        .catch(err => alert("You need to inform a city OR use no accent!"))
 }
 
 document.getElementById("button2").addEventListener("click", getWeather)
