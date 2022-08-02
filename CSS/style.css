@@ -1,0 +1,208 @@
+@media only screen and (max-width: 480px ) {
+    body {
+        background-color: black;
+        margin: 0;
+    }
+
+    .cloud {
+        padding-left: 70px;
+    }
+
+    .sentenceClass {
+        color: white;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding-left: 35px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+     .canvas {
+        background-color: white;
+     }
+
+     .seta {
+        padding-left: 130px;
+     }
+
+     .img {
+        display: none;
+     }
+
+     .fade {
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: 290px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .buttonClass {
+        margin-left: 95px;
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #d15710 0, #c7a01f 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 70px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        display: inline-flex;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        font-size: 30px;
+    }
+    
+    .buttonClass:focus {
+        box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
+    }
+    
+    .buttonClass:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    
+    .buttonClass:active {
+        box-shadow: #a8370a 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+    
+    .sentenceClass2 {
+        color: white;
+        font-size: 20px;
+        padding-left: 30px;
+        display: none;
+    }
+
+    .input {
+        margin-left: 50px;
+        font-size: 20px;
+        display: none;
+    }
+
+    .input2 {
+        margin-left: 50px;
+        font-size: 20px;
+        display: none;
+    }
+
+    .buttonClass2 {
+        margin-left: 95px;
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #d15710 0, #c7a01f 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 70px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        display: none;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        font-size: 30px;
+    }
+    
+    .buttonClass2:focus {
+        box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
+    }
+    
+    .buttonClass2:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    
+    .buttonClass2:active {
+        box-shadow: #a8370a 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+
+    .group {
+        background-color: white;
+    }
+
+    .name {
+        padding-left: 110px;
+    }
+
+    .desc {
+        padding-left: 110px;
+        font-size: 20px;
+    }
+
+    .temp {
+        padding-left: 110px;
+        font-size: 20px;
+    }
+}

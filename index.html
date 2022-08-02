@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <head>
+        <div>
+            <img class="cloud" src="IMG/nuvem.png" height="200px">
+            <div class="navbar">
+                <a class="link" href="">Information</a>
+                <a class="link2" href="#button">Is going to rain?</a>
+                <a class="link3" href="">Dev</a>
+            </div>
+            <p class="sentenceClass">The right time to know the rain</p>
+            <img class="seta" src="IMG/seta.png" height="100px">
+            <div>
+                <div class="img fade">
+                    <img src="IMG/storm.jpg" height="240px">
+                </div>
+                <div class="img fade">
+                    <img src="IMG/storm2.jpg" height="240px">
+                </div>
+                <div class="img fade">
+                    <img src="IMG/storm3.jpg" height="240px">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <br>
+            </div>
+        </div>
+    </head>
+    <main>
+        <div>
+            <p class="sentenceClass">If you would like to know if it's going to rain, click in the button bellow</p>
+            <button id="button" class="buttonClass">Click here</button>
+        </div>
+        <div>
+            <p id="sentence2" class="sentenceClass2">So, here we can see the informations about any city. Try it!</p>
+            <br>
+            <input class="input2" type="text" id="input2" placeholder="Type the city">
+            <br>
+            <input type="submit" id="button2" value="Submit" class="buttonClass2">
+            <br>
+        </div>
+        <div>
+            <div class="group">
+                <h1 class="name"></h1>
+                <p class="desc"></p>
+                <p class="temp"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
