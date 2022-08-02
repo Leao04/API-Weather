@@ -20,22 +20,22 @@ function active(n) {
     carousel[carouselStart - 1].style.display = "block"
 }
 
-// var carouselPosition = 0;
-// moveCarousel();
+var carouselPosition = 0;
+moveCarousel();
 
-// function moveCarousel() {
-//     var i;
-//     var carousel = document.getElementsByClassName("img");
-//     for (i = 0; i < carousel.length; i++) {
-//         carousel[i].style.display = "none";
-//     }
-//     carouselPosition++;
-//     if (carouselPosition > carousel.length) {
-//         carouselPosition = 1;
-//     }
-//     carousel[carouselPosition - 1].style.display = "block";
-//     setTimeout(moveCarousel, 3000);
-//}
+function moveCarousel() {
+    var i;
+    var carousel = document.getElementsByClassName("img");
+    for (i = 0; i < carousel.length; i++) {
+        carousel[i].style.display = "none";
+    }
+    carouselPosition++;
+    if (carouselPosition > carousel.length) {
+        carouselPosition = 1;
+    }
+    carousel[carouselPosition - 1].style.display = "block";
+    setTimeout(moveCarousel, 3000);
+}
 
 //----------------------------------------------------
 
@@ -43,7 +43,7 @@ let phrase = [1];
 let city = [1];
 let btn = [1];
 
-function startWeather(m, b, h)  {
+function startWeather(m, b, h) {
     var ii;
     var iii;
     var iiii;
@@ -96,24 +96,24 @@ var temp = document.querySelector('.temp');
 const toclick = document.getElementById("button2");
 
 
-function getWeather () {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ inputValue.value +'&appid=f0b2f33a3c8630929f4a871f76a2b05f')
+function getWeather() {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&appid=f0b2f33a3c8630929f4a871f76a2b05f')
         .then(response => response.json())
         .then(data => {
             var nameValue = data['name'];
-            var tempValue = data['main'] ['temp'];
+            var tempValue = data['main']['temp'];
             //kelvin - 273.15;
             var descValue = data['weather'][0]['description'];
             var result = 273.15
 
-            
+
 
             namee.innerHTML = nameValue;
-            temp.innerHTML = (tempValue - result) + 'ºC';
+            temp.innerHTML = (tempValue - result).toFixed(2) + 'ºC';
             desc.innerHTML = descValue;
         })
 
-        .catch(err => console.log("Erro"))
+        .catch(err => alert("You need to inform a city!"))
 }
 
 document.getElementById("button2").addEventListener("click", getWeather)
