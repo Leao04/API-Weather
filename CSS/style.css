@@ -1,7 +1,98 @@
-@media only screen and (max-width: 480px ) {
+@media only screen and (max-width: 480px) {
     body {
         background-color: black;
         margin: 0;
+    }
+
+    .splash {
+        background-color: black;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 200;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        line-height: 90vh;
+    }
+
+    .fadee {
+        opacity: 0;
+        animation: fadeIn  is ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .span {
+        height: 30px;
+        width: 30px;
+        background: #ddd;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    span:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 2px;
+        margin-left: 70px;
+        margin-top: 90px;
+        border: 70px solid transparent;
+        border-top-color: orangered;
+        border-bottom-color: orangered;
+        animation: spin 0.5s linear infinite;
+    }
+
+    span:nth-of-type(1) {
+        animation: bounce 0.55s ease-in-out infinite;
+        margin-left: -50px;
+    }
+
+    span:nth-of-type(2) {
+        animation: bounce 0.55s ease-in-out 0.33s infinite;
+    }
+
+    span:nth-of-type(3) {
+        animation: bounce 0.55s ease-in-out 0.66s infinite;
+        margin-left: 50px;
+    }
+
+    @keyframes bounce {
+        0% {
+            margin-top: 50px;
+        }
+
+        50% {
+            margin-top: 35px;
+        }
+
+        100% {
+            margin-top: 50px;
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+
+        50% {
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        100% {
+            transform: rotate(360deg) scale(1)
+        }
+
     }
 
     .cloud {
@@ -17,9 +108,9 @@
     .navbar {
         overflow: hidden;
         background-color: #333;
-      }
-      
-      .navbar a {
+    }
+
+    .navbar a {
         float: left;
         color: #f2f2f2;
         text-align: center;
@@ -28,21 +119,21 @@
         padding-top: 15px;
         text-decoration: none;
         font-size: 17px;
-      }
-      
-     .canvas {
+    }
+
+    .canvas {
         background-color: white;
-     }
+    }
 
-     .seta {
+    .seta {
         padding-left: 160px;
-     }
+    }
 
-     .img {
+    .img {
         display: none;
-     }
+    }
 
-     .fade {
+    .fade {
         animation-name: fade;
         animation-duration: 0.5s;
     }
@@ -111,21 +202,21 @@
         white-space: nowrap;
         font-size: 30px;
     }
-    
+
     .buttonClass:focus {
         box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
     }
-    
+
     .buttonClass:hover {
         box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
         transform: translateY(-2px);
     }
-    
+
     .buttonClass:active {
         box-shadow: #a8370a 0 3px 7px inset;
         transform: translateY(2px);
     }
-    
+
     .sentenceClass2 {
         color: white;
         font-size: 20px;
@@ -173,16 +264,16 @@
         white-space: nowrap;
         font-size: 30px;
     }
-    
+
     .buttonClass2:focus {
         box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
     }
-    
+
     .buttonClass2:hover {
         box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
         transform: translateY(-2px);
     }
-    
+
     .buttonClass2:active {
         box-shadow: #a8370a 0 3px 7px inset;
         transform: translateY(2px);
